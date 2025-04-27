@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balões Estourados</title>
+    <style>
+        body {
+            background-color: #e0f7fa;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+		canvas, video {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #instructions {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+        
+        h2 {
+            margin-top: 0;
+        }
+        #app-container {
+            position: relative; /* This creates a new positioning context */
+			display: inline-block;
+            width: 640px; /* Adjust as per your video/canvas size */
+            height: 480px; /* Adjust as per your video/canvas size */
+        }
+        
+        #webcam, #canvas {
+            transform: scaleX(-1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000; /* Ensure this is lower than the counters */
+        }
+        
+        .counter {
+            position: absolute;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            z-index: 1001; /* Higher than video/canvas */
+        }
+        
+        #popped {
+            top: 10px;
+            left: 10px;
+        }
+        
+        #missed {
+            top: 10px;
+            right: 10px;
+        }
+
+        #overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-family: Arial, sans-serif;
+            z-index: 1;
+            white-space: nowrap;
+        }
+        #last-spoken,
+        #current-color {
+            display: inline;
+            margin-right: 10px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/handpose"></script>
+</head>
+<body>
+    <div id="app-container">
+        <div id="video-canvas-container">
+            <video id="webcam" width="640" height="480" autoplay></video>
+            <canvas id="canvas" width="640" height="480"></canvas>
+        </div>
+        <div id="popped" class="counter">Estourados: 0</div>
+        <div id="missed" class="counter">Perdidos: 0</div>
+    </div>
+    <div id="instructions">
+        <h2>Instrucões</h2>
+        <ol>
+            <li>Certifique-se de que sua webcam esteja conectada e posicionada para que você possa mover sua mão facilmente na frente dela.</li>
+            <li>Estoure o máximo de balões que puder movendo sua mão na frente da webcam e usando seu dedo para tocar nos balões.</li>
+            <li>Acompanhe a contagem de balões "Estourados" e "Perdidos":
+                <ul>
+                    <li><strong>Estourados:</strong> Você ganha um ponto para cada balão que estourar.</li>
+                    <li><strong>Perdido:</strong> Evite que os balões caiam na parte inferior da tela.</li>
+                </ul>
+            </li>
+            <li>O jogo termina quando um certo número de balões for perdido. Tente alcançar a pontuação mais alta!</li>
+        </ol>
+        <p>Dicas:
+            <ul>
+                <li>Mova a mão suavemente para estourar balões com precisão.</li>
+                <li>Observe todas as áreas da tela, pois os balões podem aparecer em qualquer lugar.</li>
+                <li>Desafie-se a superar a sua pontuação mais alta e minimizar o número de balões perdidos!</li>
+            </ul>
+        </p>
+        <!-- <p>Created by <a href="https://chat.openai.com/share/d230e8d3-0f6e-49b2-a0c6-51134757ace5" target="_blank">this dialog with GPT-4</a></p> -->
+    </div>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
