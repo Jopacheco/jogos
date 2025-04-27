@@ -1,4 +1,4 @@
-<p><b></b>Experiência com Jogos com IA, HTML,CSS e JavaScript</p></b>
+<p><b>Experiência com Jogos com IA, HTML,CSS e JavaScript</p></b>
 <p>Estrutura das pastas :</p>
 <p>/Emojis Adventures</p>
 <p>/Pintar com Emojis Animais</p>
