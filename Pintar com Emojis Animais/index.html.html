@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintar Emojis de Animais no Canvas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .emoji-container {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .emoji-button {
+            font-size: 30px;
+            margin: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+        }
+        .emoji-button:hover {
+            background-color: #e0e0e0;
+        }
+        .color-box {
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 5px;
+        }
+        canvas {
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pintar Emojis de Animais no Canvas</h1>
+
+    <div class="emoji-container" id="emojiDisplay">
+        🐶
+    </div>
+
+    <div>
+        <button class="emoji-button" onclick="changeEmoji('🐶')">🐶</button>
+        <button class="emoji-button" onclick="changeEmoji('🐱')">🐱</button>
+        <button class="emoji-button" onclick="changeEmoji('🦁')">🦁</button>
+        <button class="emoji-button" onclick="changeEmoji('🐘')">🐘</button>
+        <button class="emoji-button" onclick="changeEmoji('🐯')">🐯</button>
+        <button class="emoji-button" onclick="changeEmoji('🐵')">🐵</button>
+    </div>
+
+    <br>
+    <h3>Escolha a cor de fundo:</h3>
+    <div>
+        <div class="color-box" style="background-color: #FF6347;" onclick="changeBackgroundColor('#FF6347')"></div>
+        <div class="color-box" style="background-color: #FFD700;" onclick="changeBackgroundColor('#FFD700')"></div>
+        <div class="color-box" style="background-color: #32CD32;" onclick="changeBackgroundColor('#32CD32')"></div>
+        <div class="color-box" style="background-color: #1E90FF;" onclick="changeBackgroundColor('#1E90FF')"></div>
+        <div class="color-box" style="background-color: #8A2BE2;" onclick="changeBackgroundColor('#8A2BE2')"></div>
+        <div class="color-box" style="background-color: #FF69B4;" onclick="changeBackgroundColor('#FF69B4')"></div>
+    </div>
+
+    <br>
+    <canvas id="emojiCanvas" width="500" height="500"></canvas>
+
+    <script>
+        let selectedEmoji = '🐶'; // Emoji inicial
+        let backgroundColor = '#FFFFFF'; // Cor de fundo inicial
+        const canvas = document.getElementById("emojiCanvas");
+        const ctx = canvas.getContext("2d");
+
+        // Função para alterar o emoji selecionado
+        function changeEmoji(emoji) {
+            selectedEmoji = emoji;
+            document.getElementById("emojiDisplay").textContent = emoji;
+        }
+
+        // Função para alterar a cor de fundo do canvas
+        function changeBackgroundColor(color) {
+            backgroundColor = color;
+            canvas.style.backgroundColor = color;
+        }
+
+        // Função para desenhar o emoji no canvas
+        canvas.addEventListener('click', function(event) {
+            const rect = canvas.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            const y = event.clientY - rect.top;
+
+            // Tamanho do emoji
+            const emojiSize = 50;
+
+            // Desenha o emoji no local onde o usuário clicou
+            ctx.font = `${emojiSize}px Arial`;
+            ctx.fillText(selectedEmoji, x - emojiSize / 2, y + emojiSize / 2);
+        });
+    </script>
+
+</body>
+</html>
