@@ -3,6 +3,6 @@
 <p>/Emojis Adventures</p>
 <p>/Pintar com Emojis Animais</p>
 <p>/Pintar com Emojis</p>
-<p>/PopuBalloons</p>
+<p>/PopupBalloons</p>
 <p>/Water Balloons Flowers</p>
 <p>Readme</p>
