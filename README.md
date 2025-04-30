@@ -9,6 +9,7 @@
 
 
 BSD 3-Clause License</br>
-Copyright (c) 2023, Ken Kahn</br>
-Copyright (c) 2025, Jorge Pacheco
+Copyright (c) 2025, Jorge Pacheco</br>
+Copyright (c) 2023, Ken Kahn
+
 
