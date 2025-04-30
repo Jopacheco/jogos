@@ -8,7 +8,7 @@
 <p><a href="https://jopacheco.github.io/jogos/PopupBalloons">>Rebentar Balões</a></p>
 
 
-BSD 3-Clause License
-Copyright (c) 2023, Ken Kahn
+BSD 3-Clause License</br>
+Copyright (c) 2023, Ken Kahn</br>
 Copyright (c) 2025, Jorge Pacheco
 
