@@ -7,3 +7,8 @@
 <p><a href="https://jopacheco.github.io/jogos/Water Balloon Flowers">>Balões Água e Flores</a></p>
 <p><a href="https://jopacheco.github.io/jogos/PopupBalloons">>Rebentar Balões</a></p>
 
+
+BSD 3-Clause License
+Copyright (c) 2023, Ken Kahn
+Copyright (c) 2025, Jorge Pacheco
+
