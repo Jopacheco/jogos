@@ -4,5 +4,5 @@
 <p><a href="https://jopacheco.github.io/jogos/Pintar com Emojis Animais">Pintar com Emojis de Animais</a></p>
 <p><a href="https://jopacheco.github.io/jogos/Pintar com Emojis">Pintar com Emojis</a></p>
 <p><a href="https://jopacheco.github.io/jogos/PopupBalloons">Rebentar Balões</a></p>
-<p><a href="https://jopacheco.github.io/jogos/Water Balloon Flowers">Baões Água e Flores</a></p>
+<p><a href="https://jopacheco.github.io/jogos/Water Balloon Flowers">Balões Água e Flores</a></p>
 
