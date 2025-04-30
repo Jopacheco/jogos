@@ -1,5 +1,5 @@
-<p><b>Repositório de Jogos com IA, HTML,CSS e JavaScript</b></p>
-<p>Estrutura das pastas :</p>
+<p><b>Repositório de Jogos com IA, HTML, CSS e JavaScript</b></p>
+<p>Jogos Disponíveis:</p>
 <p><a href="https://jopacheco.github.io/jogos/Emojis Adventures">Emojis Adventures</a></p>
 <p><a href="https://jopacheco.github.io/jogos/Pintar com Emojis Animais">Pintar com Emojis Animais</a></p>
 <p><a href="https://jopacheco.github.io/jogos/Pintar com Emojis">Pintar com Emojis</a></p>
