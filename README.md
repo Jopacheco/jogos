@@ -1,6 +1,6 @@
 <p><b>Repositório de Jogos com IA, HTML,CSS e JavaScript</b></p>
 <p>Estrutura das pastas :</p>
-<p>/Emojis Adventures</p>
+<p><a href="https://github.com/Jopacheco/jogos/Emojis Adventures">Emojis Adventures</a></p>
 <p>/Pintar com Emojis Animais</p>
 <p>/Pintar com Emojis</p>
 <p>/PopupBalloons</p>
