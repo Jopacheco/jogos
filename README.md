@@ -9,8 +9,8 @@
 <p></p><p></p><p></p>
 
 
-BSD 3-Clause License
-Copyright (c) 2025, Jorge Pacheco
+BSD 3-Clause License.
+Copyright (c) 2025, Jorge Pacheco.
 Copyright (c) 2023, Ken Kahn
 
 
