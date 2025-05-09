@@ -1,4 +1,4 @@
-<h1><b>Repositório de Jogos Educativos</h1></b>
+<h1><b>Repositório de Jogos Educativos</b></h1>
 <p> (com o uso de IA, HTML, CSS e JavaScript)</p>
 <p>Jogos Disponíveis:</p>
 
