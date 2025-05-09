@@ -1,4 +1,4 @@
-<h1><b> Repositório de Jogos Educativos <p>(com o uso de IA, HTML, CSS e JavaScript)</h1></b></p>
+<h1><b>Repositório de Jogos Educativos</h1></b><p> (com o uso de IA, HTML, CSS e JavaScript)</p>
 <p>Jogos Disponíveis:</p>
 
 <p><a href="https://jopacheco.github.io/jogos/Emojis Adventures">>Aventuras com Emojis (com IA)</a></p>
